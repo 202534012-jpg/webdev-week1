@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -5,27 +6,142 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Perkenalan - Yakobus Nelson Kamun</title>
 </head>
+
 <body>
-  <h1>Yakobus Nelson Kamun</h1>
-  
-  <img src="jpg.jpg" alt="Foto profil Yakobus Nelson Kamun" width="200">
-  
-  <p>Halo! Nama saya Yakobus Nelson Kamun. Saya adalah seorang mahasiswa yang sedang menempuh pendidikan di bidang teknologi informasi dan bercita-cita menjadi seorang web developer.</p>
-  
-  <p>Saat ini saya fokus mempelajari dasar-dasar pemrograman web seperti HTML, CSS, dan Git agar dapat membangun aplikasi web yang modern serta bermanfaat bagi masyarakat.</p>
-  
-  <p><strong>Asal Sekolah / Daerah:</strong> SMA Negeri 1 Merauke / Kota Merauke</p>
-  <p><strong>Alasan Mempelajari Web Development:</strong> Ingin bisa membuat website sendiri dan menjadi developer profesional.</p>
-  
-  <h2>Hobi dan Keterampilan</h2>
-  <ul>
-    <li>Bermain Basket</li>
-    <li>Editing</li>
-    <li>Nonton Anime</li>
-  </ul>
-  
-  <p>Website bermanfaat untuk belajar: 
-    <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a>
-  </p>
+  <header>
+    <h1>Yakobus Nelson Kamun</h1>
+
+    <nav aria-label="Navigasi utama">
+      <a href="#profil">Profil</a>
+      <a href="#potensi">Potensi</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <main>
+    <article id="profil">
+      <h2>Profil Saya</h2>
+
+      <img
+        src="images/jpg.jpg"
+        alt="Foto profil Yakobus Nelson Kamun"
+        width="200"
+      >
+
+      <p>
+        Halo! Nama saya Yakobus Nelson Kamun. Saya adalah seorang
+        mahasiswa yang sedang menempuh pendidikan di bidang Teknologi
+        Sistem Informasi dan bercita-cita menjadi seorang web developer.
+      </p>
+
+      <p>
+        Saat ini saya fokus mempelajari dasar-dasar pemrograman web
+        seperti HTML, CSS, dan Git agar dapat membangun aplikasi web
+        yang modern serta bermanfaat bagi masyarakat.
+      </p>
+
+      <p>
+        <strong>Asal Sekolah / Daerah:</strong>
+        SMA Negeri 1 Merauke / Kota Merauke
+      </p>
+
+      <p>
+        <strong>Alasan Mempelajari Web Development:</strong>
+        Ingin bisa membuat website sendiri dan menjadi developer
+        profesional.
+      </p>
+
+      <h3>Hobi dan Keterampilan</h3>
+
+      <ul>
+        <li>Bermain Basket</li>
+        <li>Editing</li>
+        <li>Nonton Anime</li>
+      </ul>
+
+      <p>
+        Website bermanfaat untuk belajar:
+        <a
+          href="https://developer.mozilla.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          MDN Web Docs
+        </a>
+      </p>
+
+      <h3>Prinsip Hidup</h3>
+
+      <p>
+        "ORA ET LABORE."
+      </p>
+
+      <p>
+        Berdoa Dan.
+      </p>
+    </article>
+
+    <section id="potensi">
+      <h2>Potensi Daerah</h2>
+
+      <p>
+        Kota Merauke memiliki berbagai potensi daerah yang dapat
+        dikembangkan, terutama dalam bidang pertanian, perikanan,
+        perkebunan, dan pariwisata.
+      </p>
+
+      <p>
+        Kekayaan alam dan keberagaman budaya di Merauke juga dapat
+        diperkenalkan melalui teknologi digital. Website dapat menjadi
+        salah satu media untuk memperkenalkan potensi daerah kepada
+        masyarakat yang lebih luas.
+      </p>
+    </section>
+
+    <section id="kontak">
+      <h2>Kirim Pesan</h2>
+
+      <form action="#" method="post">
+        <div>
+          <label for="nama">Nama lengkap</label>
+          <input
+            id="nama"
+            name="nama"
+            type="text"
+            autocomplete="name"
+            required
+          >
+        </div>
+
+        <div>
+          <label for="email">Alamat email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            required
+          >
+        </div>
+
+        <div>
+          <label for="pesan">Pesan</label>
+          <textarea
+            id="pesan"
+            name="pesan"
+            minlength="10"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit">Kirim pesan</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Dibuat untuk Website Programming.</p>
+  </footer>
 </body>
 </html>
+```
