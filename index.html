@@ -1,26 +1,138 @@
-```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Perkenalan - Yakobus Nelson Kamun</title>
+
+  <title>Informasi Kota Merauke - Yakobus Nelson Kamun</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #222;
+    }
+
+    header,
+    main,
+    footer {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #ffffff;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      margin-right: 20px;
+      font-weight: bold;
+    }
+
+    main {
+      background-color: #ffffff;
+    }
+
+    article,
+    section {
+      margin-bottom: 40px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    form {
+      max-width: 600px;
+    }
+
+    form div {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      max-width: 500px;
+      padding: 10px;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    /*
+      Focus indicator untuk pengguna keyboard.
+      Outline tetap terlihat ketika elemen mendapat focus.
+    */
+    a:focus,
+    input:focus,
+    textarea:focus,
+    button:focus {
+      outline: 3px solid #005fcc;
+      outline-offset: 3px;
+    }
+
+    footer {
+      background-color: #ffffff;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      header,
+      main,
+      footer {
+        padding: 15px;
+      }
+
+      nav a {
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
 </head>
 
 <body>
+
   <header>
-    <h1>Yakobus Nelson Kamun</h1>
+    <h1>Informasi Kota Merauke</h1>
 
     <nav aria-label="Navigasi utama">
       <a href="#profil">Profil</a>
-      <a href="#potensi">Potensi</a>
+      <a href="#potensi">Potensi Merauke</a>
       <a href="#kontak">Kontak</a>
     </nav>
   </header>
 
   <main>
+
     <article id="profil">
-      <h2>Profil Saya</h2>
+      <h2>Profil dan Informasi Merauke</h2>
 
       <img
         src="images/jpg.jpg"
@@ -29,15 +141,16 @@
       >
 
       <p>
-        Halo! Nama saya Yakobus Nelson Kamun. Saya adalah seorang
-        mahasiswa yang sedang menempuh pendidikan di bidang Teknologi
-        Sistem Informasi dan bercita-cita menjadi seorang web developer.
+        Halo! Nama saya Yakobus Nelson Kamun. Saya adalah mahasiswa
+        yang sedang mempelajari Teknologi Sistem Informasi dan
+        pengembangan web.
       </p>
 
       <p>
-        Saat ini saya fokus mempelajari dasar-dasar pemrograman web
-        seperti HTML, CSS, dan Git agar dapat membangun aplikasi web
-        yang modern serta bermanfaat bagi masyarakat.
+        Melalui halaman ini saya ingin memperkenalkan Kota Merauke
+        serta berbagai potensi yang dimiliki daerah tersebut.
+        Teknologi digital dapat digunakan sebagai media untuk
+        memperkenalkan informasi daerah kepada masyarakat yang lebih luas.
       </p>
 
       <p>
@@ -47,42 +160,52 @@
 
       <p>
         <strong>Alasan Mempelajari Web Development:</strong>
-        Ingin bisa membuat website sendiri dan menjadi developer
-        profesional.
+        Saya ingin dapat membuat website sendiri dan menjadi
+        developer profesional.
       </p>
 
-      <h3>Hobi dan Keterampilan</h3>
+      <section>
+        <h3>Hobi dan Keterampilan</h3>
 
-      <ul>
-        <li>Bermain Basket</li>
-        <li>Editing</li>
-        <li>Nonton Anime</li>
-      </ul>
+        <ul>
+          <li>Bermain basket</li>
+          <li>Editing</li>
+          <li>Menonton anime</li>
+        </ul>
+      </section>
 
-      <p>
-        Website bermanfaat untuk belajar:
-        <a
-          href="https://developer.mozilla.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          MDN Web Docs
-        </a>
-      </p>
+      <section>
+        <h3>Sumber Belajar Web Development</h3>
 
-      <h3>Prinsip Hidup</h3>
+        <p>
+          Salah satu sumber belajar yang saya gunakan adalah
+          <a
+            href="https://developer.mozilla.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            MDN Web Docs
+          </a>.
+        </p>
+      </section>
 
-      <p>
-        "ORA ET LABORE."
-      </p>
+      <section>
+        <h3>Prinsip Hidup</h3>
 
-      <p>
-        Berdoa Dan.
-      </p>
+        <p>
+          <strong>ORA ET LABORA.</strong>
+        </p>
+
+        <p>
+          Berdoa dan bekerja dengan sungguh-sungguh.
+        </p>
+      </section>
+
     </article>
 
+
     <section id="potensi">
-      <h2>Potensi Daerah</h2>
+      <h2>Potensi Kota Merauke</h2>
 
       <p>
         Kota Merauke memiliki berbagai potensi daerah yang dapat
@@ -96,14 +219,32 @@
         salah satu media untuk memperkenalkan potensi daerah kepada
         masyarakat yang lebih luas.
       </p>
+
+      <h3>Bidang Potensi Daerah</h3>
+
+      <ul>
+        <li>Pertanian</li>
+        <li>Perikanan</li>
+        <li>Perkebunan</li>
+        <li>Pariwisata</li>
+        <li>Budaya daerah</li>
+      </ul>
     </section>
+
 
     <section id="kontak">
       <h2>Kirim Pesan</h2>
 
+      <p>
+        Gunakan formulir berikut jika ingin memberikan pesan atau
+        tanggapan mengenai informasi Kota Merauke.
+      </p>
+
       <form action="#" method="post">
+
         <div>
           <label for="nama">Nama lengkap</label>
+
           <input
             id="nama"
             name="nama"
@@ -115,6 +256,7 @@
 
         <div>
           <label for="email">Alamat email</label>
+
           <input
             id="email"
             name="email"
@@ -126,23 +268,31 @@
 
         <div>
           <label for="pesan">Pesan</label>
+
           <textarea
             id="pesan"
             name="pesan"
             minlength="10"
-             autocomplete="off"
+            autocomplete="off"
             required
           ></textarea>
         </div>
 
-        <button type="submit">Kirim pesan</button>
+        <button type="submit">
+          Kirim pesan
+        </button>
+
       </form>
     </section>
+
   </main>
 
+
   <footer>
-    <p>Dibuat untuk Website Programming.</p>
+    <p>
+      Dibuat oleh Yakobus Nelson Kamun untuk Tugas 2 Web Development.
+    </p>
   </footer>
+
 </body>
 </html>
-```
