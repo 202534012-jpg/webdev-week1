@@ -1,0 +1,185 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #1d4ed8;
+    --color-text: #1f2937;
+    --color-muted: #4b5563;
+    --color-surface: #ffffff;
+    --color-border: #d1d5db;
+    --color-focus: #f59e0b;
+
+    --space-1: 0.5rem;
+    --space-2: 1rem;
+    --space-3: 1.5rem;
+
+    --radius: 0.5rem;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f8fafc;
+    color: var(--color-text);
+}
+
+
+header {
+    background-color: var(--color-primary);
+    color: white;
+    padding: var(--space-3);
+}
+
+
+header h1 {
+    margin-top: 0;
+}
+
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+}
+
+
+.nav-link {
+    color: white;
+    padding: var(--space-1) var(--space-2);
+    border-radius: var(--radius);
+}
+
+
+.nav-link:hover {
+    background-color: #163fa8;
+}
+
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--color-focus);
+    outline-offset: 3px;
+}
+
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: var(--space-3);
+}
+
+
+.card {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: var(--space-3);
+    margin-bottom: var(--space-3);
+}
+
+
+.card h2 {
+    color: var(--color-primary);
+}
+
+
+.card p {
+    max-width: 65ch;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: var(--space-2);
+    border-radius: var(--radius);
+}
+
+
+form {
+    max-width: 600px;
+}
+
+
+form div {
+    margin-bottom: var(--space-2);
+}
+
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: var(--space-1);
+}
+
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    font: inherit;
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius);
+}
+
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+
+button {
+    padding: 0.75rem 1.25rem;
+    font: inherit;
+    font-weight: bold;
+    border: 2px solid var(--color-text);
+    border-radius: var(--radius);
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #e5e7eb;
+}
+
+
+footer {
+    background-color: var(--color-text);
+    color: white;
+    text-align: center;
+    padding: var(--space-2);
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+        padding: var(--space-2);
+    }
+
+    main {
+        padding: var(--space-2);
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-link {
+        width: fit-content;
+    }
+}
